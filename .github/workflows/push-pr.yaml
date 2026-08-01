@@ -1,0 +1,23 @@
+name: Test Workflow
+on:
+    push:
+        branches:
+            - main
+            - "release/**"
+        paths:
+            - "src/**"
+
+    pull_request:
+            branches:
+                - main
+                - "release/**"
+jobs:            
+      test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout-code
+              uses: actions/checkout@v6.1.0
+
+            - name: run-tests
+              run: npm test
+        
