@@ -1,5 +1,5 @@
 {
-  "name": "greet-project",
+  "name": "src",
   "version": "1.0.0",
   "description": "Simple Node.js greeting project",
   "main": "src/app.js",
