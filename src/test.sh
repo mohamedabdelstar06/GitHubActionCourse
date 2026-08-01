@@ -2,7 +2,7 @@
 
 echo "Running Tests..."
 
-output=$(node -e "const greet = require('./app'); console.log(greet('Mohamed'));")
+output=$(node -e "const greet = require('./src/app'); console.log(greet('Mohamed'));")
 
 expected="Hello Mohamed!"
 
